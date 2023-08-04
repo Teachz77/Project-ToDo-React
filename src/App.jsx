@@ -31,12 +31,16 @@ function App() {
     setTodos(updatedTodos)
   }
 
-  console.log(todos)
+  const deleteTodo = () => {
+    console.log('deleteTodo function is called')
+  }
+
+  
 
   return(
     <div style={styles.container}>
       <h1 style={styles.title}  >My Todo List</h1>
-      <Todos todos={todos} toggleCompleted={toggleCompleted}/>
+      <Todos todos={todos} toggleCompleted={toggleCompleted} delTodo={deleteTodo}/>
     </div>
   )
 }
