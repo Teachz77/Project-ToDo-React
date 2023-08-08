@@ -13,8 +13,8 @@ const TodoItem = ({ todo, toggleCompleted, deleteTodo }) => {
   return (
     <div style={styles.todoItem}>
       <input type="checkbox" style={styles.checkbox} onChange={() => toggleCompleted(todo.id)}/>
-       <p style={getTodoTitleStyle()}>{todo.title}</p>
-       <button style={styles.button} onChange={() => deleteTodo()}>x</button>
+      <p style={getTodoTitleStyle()}>{todo.title}</p>
+      <button style={styles.button} onChange={() => deleteTodo(todo.id)}>x</button>
     </div>
    
   )
