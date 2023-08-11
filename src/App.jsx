@@ -36,7 +36,7 @@ function App() {
 
   const deleteTodo = (todoId) => {
     const updatedTodos = todos.filter((todo) => {
-      return todo.id === todoId
+      return todo.id != todoId
     })
     setTodos(updatedTodos)
   }

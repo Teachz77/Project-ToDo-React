@@ -11,19 +11,6 @@ const TodoItem = ({ todo }) => {
     }
   }
 
-  const noneTodo = () =>{
-    if (todo.completed === true){
-      return { display: 'none'}
-    } else{
-      return {  border: '2px solid #f4f4f4',
-                fontSize: '24px',
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                padding: '0 20px',}
-    }
-  }
-
   return (
 
     <div style={styles.todoItem}>
